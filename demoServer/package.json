@@ -1,0 +1,19 @@
+{
+  "name": "demoServer",
+  "version": "1.0.0",
+  "description": "demo of full functions about file upload",
+  "main": "index.js",
+  "dependencies": {
+    "formidable": "^1.0.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Rex",
+  "license": "ISC"
+}
