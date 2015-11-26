@@ -23,6 +23,26 @@ var PersonEntity = new PersonModel({
 
 // PersonEntity.save();
 
+var nameList = [{
+    "name": "Jody1"
+}, {
+    "name": "Jody2"
+}, {
+    "name": "Jody3"
+}, {
+    "name": "Jody4"
+}, {
+    "name": "Jody5"
+}, ];
+
+for (var i = 0; i < nameList.length; i++) {
+    var PersonEntity1 = new PersonModel(nameList[i]);
+    console.log(PersonEntity1);
+    PersonEntity1.remove(nameList[i], function(err, docs) {
+        console.log(err);
+        console.log(docs);
+    });
+};
 
 //为Schema模型追加speak方法
 /*PersonSchema.methods.speak = function() {
